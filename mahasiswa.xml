@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.4.5
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Mar 14, 2017 at 05:07 AM
+- Server version: 5.5.16
+- PHP Version: 5.3.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="akademik" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="mahasiswa">
+                CREATE TABLE `mahasiswa` (
+                  `nim` varchar(15) NOT NULL,
+                  `nama` varchar(150) NOT NULL,
+                  `alamat` varchar(250) NOT NULL,
+                  `progdi` varchar(10) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'akademik'
+    -->
+    <database name="akademik">
+        <!-- Table mahasiswa -->
+        <table name="mahasiswa">
+            <column name="nim">001</column>
+            <column name="nama">budi</column>
+            <column name="alamat">semarang</column>
+            <column name="progdi">informatik</column>
+        </table>
+        <table name="mahasiswa">
+            <column name="nim">002</column>
+            <column name="nama">ayu</column>
+            <column name="alamat">pati</column>
+            <column name="progdi">informatik</column>
+        </table>
+    </database>
+</pma_xml_export>
